@@ -6,6 +6,7 @@ const apellido = Joi.string().min(3).max(30)
 const text = Joi.string().min(5).max(30);
 const date = Joi.string();
 const email = Joi.string();
+const telefono = Joi.number();
 
 
 const createProductSchema = Joi.object({
@@ -14,6 +15,7 @@ const createProductSchema = Joi.object({
   text: text.required(),
   date: date.required(),
   email: email.required(),
+  telefono: telefono.required()
 });
 
 const updateProductSchema = Joi.object({

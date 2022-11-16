@@ -17,6 +17,7 @@ class ProductsService {
        price: parseInt(faker.commerce.price(),15),
        text: faker.commerce.productText,
        date: faker.commerce.date,
+       telefono: faker.commerce.telefono,
         isBlock: faker.datatype.boolean()
       });
     }
